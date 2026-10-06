@@ -1,0 +1,63 @@
+{
+  "id": "KGL",
+  "code": "KGL",
+  "mode": "mrt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "Kajang Line",
+    "ms": "Laluan Kajang",
+    "zh-Hant": "加影線",
+    "ta": "காஜாங் பாதை"
+  },
+  "color": "#1e8a3c",
+  "style": "octilinear",
+  "inOut": true,
+  "created": "2026-10-09",
+  "badges": {
+    "s": {
+      "dx": -41,
+      "dy": 55
+    },
+    "e": {
+      "dx": 41,
+      "dy": 38
+    }
+  },
+  "path": [
+    {"s":"KG04","symAt":1790139025825,"symbol":"interchange"},
+    "KG05",
+    "KG06",
+    "KG07",
+    {"s":"KG08","seg":"solid"},
+    {"s":"KG09","seg":"solid"},
+    "KG10",
+    "KG12",
+    [13,32],
+    {"s":"KG12A","symAt":1790139016570,"symbol":"interchange"},
+    "KG13",
+    "KG14",
+    "KG15",
+    "KG16",
+    {"s":"KG17","symAt":1790190487662,"symbol":"chain"},
+    [32,30],
+    "KG18A",
+    "KG20",
+    "KG21",
+    {"s":"KG22","symAt":1790138884134,"symbol":"interchange"},
+    [43,28],
+    "KG23",
+    {"s":"KG24","symAt":1790273338428,"symbol":"auto"},
+    "KG25",
+    {"s":"KG26","label":{"pos":"e","dx":2,"dy":5}},
+    "KG27",
+    "KG28",
+    "KG29",
+    "KG30",
+    "KG31",
+    "KG32",
+    "KG33",
+    "KG34",
+    {"s":"KG35","label":{"pos":"w","dx":33,"dy":-41}}
+  ]
+}

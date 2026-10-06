@@ -1,0 +1,300 @@
+{
+  "id": "klang-valley-live",
+  "names": {
+    "en": "Today's Klang Valley Integrated Transit System",
+    "ms": "Peta Hari Ini untuk Sistem Transit Bersepadu Lembah Klang",
+    "zh-Hant": "今日巴生河流域綜合運輸系統",
+    "ta": "இன்றைய கிள்ளான் பள்ளத்தாக்கின் ஒருங்கிணைந்த போக்குவரத்து அமைப்பு"
+  },
+  "subtitle": "Based on today's services",
+  "country": "Malaysia",
+  "area": "Klang Valley",
+  "logo": "logo.svg",
+  "author": "Project",
+  "center": [
+    3.1492,
+    101.6964
+  ],
+  "zoom": 12,
+  "anchor": {
+    "lat": 3.1492,
+    "lng": 101.6964,
+    "step": 0.0035,
+    "x": 28,
+    "y": 28
+  },
+  "navigator": true,
+  "langOrder": [
+    "ms",
+    "en",
+    "zh-Hant",
+    "ta"
+  ],
+  "labelPos": {
+    "SP30": {
+      "pos": "n",
+      "dx": 1,
+      "dy": -48
+    },
+    "KJ10": {
+      "pos": "w"
+    },
+    "KJ11": {
+      "pos": "w"
+    },
+    "MR2": {
+      "pos": "n",
+      "size": 13
+    },
+    "AG5": {
+      "pos": "w"
+    },
+    "AG11": {
+      "pos": "se"
+    },
+    "SA01": {
+      "pos": "s"
+    },
+    "KB02": {
+      "pos": "n"
+    },
+    "KC05": {
+      "pos": "se"
+    },
+    "KJ19": {
+      "pos": "ne"
+    },
+    "KD01": {
+      "pos": "e"
+    },
+    "MR1": {
+      "pos": "s",
+      "dx": -6,
+      "dy": 27
+    },
+    "FTSY1-93sqj": {
+      "pos": "s"
+    },
+    "AG1": {
+      "pos": "sw",
+      "dx": 1,
+      "dy": 3
+    },
+    "KJ1": {
+      "pos": "se"
+    },
+    "AG18": {
+      "pos": "se"
+    },
+    "PY06": {
+      "pos": "w"
+    },
+    "PY05": {
+      "pos": "w"
+    },
+    "KJ13": {
+      "pos": "w",
+      "dx": -25
+    },
+    "SA24": {
+      "pos": "w"
+    },
+    "SA25": {
+      "pos": "w"
+    },
+    "SA26": {
+      "pos": "nw"
+    },
+    "SA23": {
+      "pos": "w"
+    },
+    "SA22": {
+      "pos": "w"
+    },
+    "SA21": {
+      "pos": "w"
+    },
+    "SA16": {
+      "pos": "w"
+    },
+    "SA13": {
+      "pos": "w"
+    },
+    "SA12": {
+      "pos": "w"
+    },
+    "SA08": {
+      "pos": "w"
+    },
+    "SA06": {
+      "pos": "w"
+    },
+    "AG3": {
+      "pos": "sw"
+    },
+    "AG2": {
+      "pos": "w"
+    },
+    "PY30": {
+      "pos": "e"
+    },
+    "AG15": {
+      "pos": "ne"
+    },
+    "AG13": {
+      "pos": "sw"
+    },
+    "KD19": {
+      "pos": "ne"
+    },
+    "SA18": {
+      "pos": "s"
+    },
+    "PY41": {
+      "pos": "nw"
+    },
+    "KS01": {
+      "pos": "ne"
+    },
+    "PY16": {
+      "pos": "w"
+    }
+  },
+  "annotations": {
+    "ann_muff5z4x5mfys": {
+      "kind": "text",
+      "x": 1761.6744602566428,
+      "y": 3063.2740717879465,
+      "text": "sss",
+      "size": 16,
+      "color": "#1b2333"
+    }
+  },
+  "numModeOverride": false,
+  "legend": [
+    {
+      "kind": "line",
+      "line": "KB"
+    },
+    {
+      "kind": "line",
+      "line": "KA"
+    },
+    {
+      "kind": "line",
+      "line": "AGL"
+    },
+    {
+      "kind": "line",
+      "line": "SPL"
+    },
+    {
+      "kind": "line",
+      "line": "KJL"
+    },
+    {
+      "kind": "line",
+      "line": "KE"
+    },
+    {
+      "kind": "line",
+      "line": "KT"
+    },
+    {
+      "kind": "line",
+      "line": "MRL"
+    },
+    {
+      "kind": "line",
+      "line": "BRT"
+    },
+    {
+      "kind": "line",
+      "line": "KGL"
+    },
+    {
+      "kind": "line",
+      "line": "KS"
+    },
+    {
+      "kind": "line",
+      "line": "PYL"
+    },
+    {
+      "kind": "line",
+      "line": "SAL"
+    },
+    {
+      "kind": "line",
+      "line": "CC"
+    },
+    {
+      "kind": "line",
+      "line": "FL1-1ckv7"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "station"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "terminal"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "disc"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "tick"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "number"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "interchange"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "capsule"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "stack"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "chain"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "link"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "connect"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "under_construction"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "provisional"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "fantasy"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "abandoned"
+    },
+    {
+      "kind": "symbol",
+      "symbol": "demolished"
+    }
+  ]
+}

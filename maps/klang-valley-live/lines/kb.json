@@ -1,0 +1,52 @@
+{
+  "id": "KB",
+  "code": "KB",
+  "mode": "commuter",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "Batu Caves - Pulau Sebang Line",
+    "ms": "Laluan Batu Caves - Pulau Sebang",
+    "zh-Hant": "峇都喼－普羅士邦線",
+    "ta": "பத்து மலை–புலாவ் செபாங்"
+  },
+  "color": "#3c5a9f",
+  "style": "octilinear",
+  "inOut": true,
+  "created": "2026-10-09",
+  "geoBends": {
+    "KA03>KA02": [[3.152153,101.691277],[3.151395,101.69088],[3.150524,101.690633],[3.14956,101.690569],[3.147206,101.690966],[3.146397,101.691272],[3.145658,101.691835],[3.144009,101.693251],[3.14321,101.693814],[3.142594,101.694029]]
+  },
+  "path": [
+    {"s":"KC05","time":4},
+    {"s":"KC04","time":3,"timeBack":2},
+    {"s":"KC03","time":2},
+    {"s":"KC02","time":4},
+    {"s":"KC01","time":6},
+    {"s":"KA04","symAt":1790685622125,"symbol":"interchange","time":3},
+    {"s":"KA03","time":4},
+    {"s":"KA02","symAt":1790190266128,"symbol":"chain","time":5,"timeBack":4},
+    {"s":"KA01","symAt":1790064184029,"symbol":"station","label":{"pos":"se","dx":-114,"dy":9},"time":6,"timeBack":7},
+    {"s":"KB01","label":{"pos":"n"},"time":2,"timeBack":3},
+    {"s":"KB02","time":6,"timeBack":5},
+    {"s":"KB03","time":6.5,"timeBack":6},
+    [37,35],
+    {"s":"KB04","label":{"pos":"s","dx":-1,"dy":16,"hide":true},"time":8,"timeBack":7},
+    [37,39],
+    {"s":"KB05","label":{"pos":"e"},"time":11,"timeBack":12},
+    {"s":"KB06","time":3,"timeBack":4},
+    {"s":"KB06A","time":3},
+    {"s":"KB07","time":7,"timeBack":6},
+    {"s":"KB08","time":13},
+    {"s":"KB09","time":6},
+    {"s":"KB10","time":7,"timeBack":10},
+    {"s":"KB11","time":6},
+    {"s":"KB12","time":8},
+    {"s":"KB13","time":6},
+    {"s":"KB14","time":5},
+    {"s":"KB15","time":13},
+    {"s":"KB16","time":17},
+    [39,53],
+    {"s":"KB17","label":{"pos":"s","dx":1,"dy":9}}
+  ]
+}
