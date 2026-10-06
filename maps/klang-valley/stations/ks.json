@@ -1,0 +1,5 @@
+[
+{"id":"KS01","names":{"en":"Skypark Terminal","ms":"Skypark Terminal","zh-Hant":"","ta":""},"lat":3.1301,"lng":101.5498,"status":"terminated","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2018-05-01","closed":"2023-02-15","node":[5,36]},
+{"id":"KS02","names":{"en":"Subang Jaya","ms":"Subang Jaya","zh-Hant":"","ta":""},"lat":3.08476,"lng":101.587384,"status":"terminated","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2018-05-01","closed":"2023-02-15","node":[11,43],"connections":[{"to":"KJ28","type":"link"}]},
+{"id":"KS03","names":{"en":"KL Sentral","ms":"KL Sentral","zh-Hant":"吉隆坡中央車站","ta":"கே.எல் சென்ட்ரல்"},"lat":3.1341,"lng":101.6862,"status":"terminated","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2018-05-01","closed":"2023-02-15","node":[24,34],"connections":[{"to":"KE1","type":"link"},{"to":"KT1","type":"link"},{"to":"KJ15","type":"link"},{"to":"KA01","type":"interchange"}]}
+]

@@ -1,0 +1,65 @@
+/* Journey planner: on top of css/style.css, which already styles the shared #app / #topbar / #left / #right / #stage
+   layout, the .dd map picker, .seg, .check, .stn-item and .sec blocks. */
+
+/* the Fastest / Cheapest / Fewest transfers seg buttons carry an icon too — .seg has no icon sizing rule of its own */
+.seg button svg { width: 15px; height: 15px; flex: none; vertical-align: -3px; margin-right: 2px; }
+/* fare type pickers above the ranking — one per network: its name, then a dropdown like the map picker's */
+.fare-types { display: grid; gap: 6px; margin-bottom: 10px; }
+.fare-type { display: flex; align-items: center; gap: 8px; }
+.fare-type > .lbl { flex: none; min-width: 64px; margin: 0; font-size: 12px; font-weight: 700; color: var(--muted); }
+.fare-dd { flex: 1; min-width: 0; }
+.fare-dd .dd-btn { width: 100%; min-width: 0; max-width: none; height: 34px; }
+.fare-dd .dd-btn svg:first-child { width: 15px; height: 15px; flex: none; color: var(--muted); }
+.fare-dd .dd-btn .nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fare-dd .dd-pop { width: 100%; top: calc(100% + 6px); }
+.fare-dd .dd-item.cur { background: var(--accent-2); }
+.fare-dd .dd-item svg { width: 15px; height: 15px; flex: none; color: var(--accent); }
+/* the route type picker: icon on top, a small label under it, three equal columns */
+.seg.seg-stack { display: flex; box-sizing: border-box; }
+.seg.seg-stack button { flex: 1 1 0; min-width: 0; height: auto; padding: 6px 4px 5px; display: flex; flex-direction: column; align-items: center; gap: 3px; white-space: normal; line-height: 1.15; }
+.seg.seg-stack button svg { width: 18px; height: 18px; margin: 0; vertical-align: 0; }
+.seg.seg-stack button span { font-size: 10.5px; text-align: center; }
+
+/* a view-only canvas never drags a station or a label — the cursor should say so, not hint at edit tools */
+#svg .stn, #svg .lbl, #svg [data-blk] { cursor: pointer !important; }
+#svg.nav-picking { cursor: crosshair; }
+#svg .stn:hover circle:first-child { filter: brightness(1.15); }
+
+.route-card { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; background: var(--panel); transition: border-color .12s, background .12s; }
+.route-card:hover { border-color: var(--accent); }
+.route-card.open { border-color: var(--accent); background: var(--accent-2); }
+.route-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.route-card-head b { font-size: 16px; }
+.route-cost { font-weight: 700; color: var(--accent); }
+.route-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+/* a route's step marker at the end of a real-map station label (the schematic draws its own in SVG) */
+.map-label .step-mark { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: 6px; padding: 0 3px; box-sizing: border-box; border-radius: 999px; border: 2px solid; font-size: 11px; font-weight: 800; line-height: 1; vertical-align: middle; text-shadow: none; }
+/* a ridden line's code, in the line's own colour — the same pill as a station code in the search results */
+.route-detail { margin-top: 10px; display: grid; gap: 7px; border-top: 1px dashed var(--line); padding-top: 8px; }
+.route-leg { display: flex; align-items: center; gap: 8px; font-size: 12.5px; }
+.route-leg svg { width: 15px; height: 15px; flex: none; color: var(--muted); }
+.route-leg .code { flex: none; }
+.route-leg span:nth-child(2) { flex: 1; min-width: 0; }
+.route-leg.walk { color: var(--muted); }
+.route-leg .hint { flex: none; }
+.route-leg button[data-viatoggle] { flex: none; }
+.route-via { margin: -2px 0 4px 24px; padding-left: 10px; border-left: 2px dotted var(--line); display: grid; gap: 3px; }
+/* a ride leg: chip · boarding station · time/cost on the first row, then the stops toggle, the stops (when open) and
+   the destination underneath, all in the middle column, with the line's rail running down under the chip */
+.route-leg.ride { display: grid; grid-template-columns: auto 1fr auto; column-gap: 8px; row-gap: 4px; align-items: center; }
+.route-leg.ride .rl-stn { min-width: 0; }
+.route-leg.ride .rl-sub { grid-column: 2 / 4; min-width: 0; }
+.route-leg.ride .rl-sub button { margin-left: -8px; }
+.route-leg.ride .route-via { margin: 0; }
+.route-leg.ride .rl-look { margin-top: -3px; font-size: 11.5px; color: var(--muted); }
+.route-leg.ride .rl-look b { color: var(--text); font-weight: 650; }
+.route-leg.ride .rl-rail { grid-column: 1; justify-self: center; align-self: stretch; width: 3px; border-radius: 2px; opacity: .7; }
+.route-via .hint { font-size: 11.5px; }
+.route-via .hint.passes { font-style: italic; opacity: .65; }   /* a station a service runs through without stopping */
+
+/* right-click menu on a station: set it as the departure or destination station */
+.ctx-menu { position: fixed; z-index: 1000; min-width: 220px; padding: 5px; border-radius: 11px; background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); display: grid; gap: 2px; }
+.ctx-menu .ctx-head { padding: 6px 9px 7px; font-weight: 700; font-size: 12.5px; border-bottom: 1px solid var(--line); margin-bottom: 3px; }
+.ctx-menu button { display: flex; align-items: center; gap: 8px; border: 0; background: transparent; color: var(--text); font: inherit; font-size: 13px; text-align: left; padding: 7px 9px; border-radius: 7px; cursor: pointer; }
+.ctx-menu button:hover, .ctx-menu button:focus-visible { background: var(--accent-2); }
+.ctx-menu button svg { width: 15px; height: 15px; flex: none; color: var(--muted); }

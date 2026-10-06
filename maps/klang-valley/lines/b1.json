@@ -1,0 +1,39 @@
+{
+  "id": "B1",
+  "code": "B1",
+  "mode": "brt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "BRT Sunway Line",
+    "ms": "Laluan BRT Sunway",
+    "zh-Hant": "雙威 BRT 線",
+    "ta": "சன்வே விரைவுப் பேருந்து வழித்தடம்"
+  },
+  "color": "#0f6b3a",
+  "style": "octilinear",
+  "inOut": true,
+  "created": "2026-10-09",
+  "badges": {
+    "s": {
+      "dx": -50,
+      "dy": 40
+    },
+    "e": {
+      "dx": 61,
+      "dy": -27
+    }
+  },
+  "path": [
+    {"s":"SB1","label":{"pos":"e","dx":15,"dy":2}},
+    [13,46],
+    "SB2",
+    "SB3",
+    [17,46],
+    "SB4",
+    [17,48],
+    "SB5",
+    "SB6",
+    "SB7"
+  ]
+}

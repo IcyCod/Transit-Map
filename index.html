@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Transit Map</title>
+  <meta name="description" content="With schematic transit map and real map.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('tm.theme'); } catch (e) {}
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="topbar-row">
+      <button class="btn icon-btn ghost" id="btnLeft" title="Show / hide lines &amp; editor panel" aria-label="Toggle lines and editor panel"></button>
+      <div class="brand" id="mapPicker"></div>
+      <div id="linePicker"></div>
+      <div class="seg" id="modeSeg">
+        <button data-mode="schematic" class="on">Schematic</button>
+        <button data-mode="map">Real map</button>
+      </div>
+      <div class="seg multi hide-narrow" id="langSeg" title="Label languages"></div>
+      <div class="spacer"></div>
+      <button class="btn icon-btn ghost" id="btnUndo" title="Undo (⌘Z / Ctrl+Z)" aria-label="Undo" disabled></button>
+      <button class="btn icon-btn ghost" id="btnRedo" title="Redo (⇧⌘Z / Ctrl+Y)" aria-label="Redo" disabled></button>
+      <div id="stationSearch" class="topbar-search"></div>
+      <button class="btn" id="btnImport" title="Import line / station JSON, or a whole map (.zip)"></button>
+      <button class="btn primary" id="btnExport" title="Export map or JSON"></button>
+      <a class="btn icon-btn ghost nav-link" id="navLink" href="navigator.html" title="Plan a journey on this map" aria-label="Plan a journey on this map"></a>
+      <button class="btn icon-btn" id="btnTheme" title="Toggle theme" aria-label="Toggle theme"></button>
+      <button class="btn icon-btn ghost" id="btnRight" title="Show / hide inspector &amp; suggestions panel" aria-label="Toggle inspector panel"></button>
+    </div>
+  </header>
+
+  <aside id="left"></aside>
+
+  <main id="stage">
+    <div id="schematic">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Transit map canvas">
+        <defs>
+          <pattern id="nodePattern" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="0" cy="0" r="2.4" fill="var(--node)"/></pattern>
+        </defs>
+        <rect id="nodeGrid" x="0" y="0" width="100%" height="100%" fill="url(#nodePattern)"/>
+        <g id="world">
+          <g id="worldMap"></g>
+          <g id="worldOverlay"></g>
+        </g>
+      </svg>
+      <div class="tools" id="tools"></div>
+      <div class="banner" id="banner" hidden></div>
+      <div class="legend" id="legend"></div>
+      <div class="zoom">
+        <button class="btn icon-btn" id="zIn" title="Zoom in">+</button>
+        <button class="btn icon-btn" id="zOut" title="Zoom out">−</button>
+        <button class="btn icon-btn" id="zFit" title="Fit all (F)"></button>
+      </div>
+    </div>
+    <div id="mapview" hidden></div>
+    <div class="tools" id="mapTools" hidden></div>
+    <div class="banner" id="mapBanner" hidden></div>
+  </main>
+
+  <aside id="right"></aside>
+</div>
+
+<div id="dialogs"></div>
+<div id="toasts" aria-live="polite"></div>
+<input type="file" id="fileIn" accept=".json,.zip,application/json,application/zip" multiple hidden>
+
+<script src="js/util.js"></script>
+<script src="js/numinput.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/zip.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/images.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/store.js"></script>
+<script src="js/actions.js"></script>
+<script src="js/history.js"></script>
+<script src="js/geometry.js"></script>
+<script src="js/symbols.js"></script>
+<script src="js/render.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/mapview.js"></script>
+<script src="js/ui-dropdown.js"></script>
+<script src="js/topbar.js"></script>
+<script src="js/ui-dialogs.js"></script>
+<script src="js/ui-schedule.js"></script>
+<script src="js/ui-maps.js"></script>
+<script src="js/ui-panels.js"></script>
+<script src="js/export.js"></script>
+<script src="js/kml.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

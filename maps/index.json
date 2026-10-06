@@ -1,0 +1,8 @@
+{
+  "default": "klang-valley",
+  "maps": [
+    "klang-valley",
+    "klang-valley-live",
+    "klang-valley-planned"
+  ]
+}

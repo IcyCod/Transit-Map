@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Journey Planner</title>
+  <meta name="description" content="Plan a trip on a Transit Map: pick a departure station and destination, and compare ways to get there by time, fare, or transfer time.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('tm.theme'); } catch (e) {}
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navigator.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="topbar-row">
+      <button class="btn icon-btn ghost" id="btnLeft" title="Show / hide stations &amp; Display" aria-label="Toggle planner panel"></button>
+      <div class="brand" id="mapPicker"></div>
+      <div class="seg" id="modeSeg">
+        <button data-mode="schematic" class="on">Schematic</button>
+        <button data-mode="map">Real map</button>
+      </div>
+      <div class="seg multi hide-narrow" id="langSeg" title="Label languages"></div>
+      <div class="spacer"></div>
+      <a class="btn icon-btn ghost" id="editLink" href="index.html" title="Open the map editor" aria-label="Open the map editor"></a>
+      <button class="btn icon-btn" id="btnTheme" title="Toggle theme" aria-label="Toggle theme"></button>
+      <button class="btn icon-btn ghost" id="btnRight" title="Show / hide ways to go" aria-label="Toggle results panel"></button>
+    </div>
+  </header>
+
+  <aside id="left"></aside>
+
+  <main id="stage">
+    <div id="schematic">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Transit map canvas">
+        <defs>
+          <pattern id="nodePattern" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="0" cy="0" r="2.4" fill="var(--node)"/></pattern>
+        </defs>
+        <rect id="nodeGrid" x="0" y="0" width="100%" height="100%" fill="url(#nodePattern)"/>
+        <g id="world">
+          <g id="worldMap"></g>
+          <g id="worldOverlay"></g>
+        </g>
+      </svg>
+      <div class="banner" id="banner" hidden></div>
+      <div class="legend" id="legend"></div>
+      <div class="zoom">
+        <button class="btn icon-btn" id="zIn" title="Zoom in">+</button>
+        <button class="btn icon-btn" id="zOut" title="Zoom out">−</button>
+        <button class="btn icon-btn" id="zFit" title="Fit all (F)"></button>
+      </div>
+    </div>
+    <div id="mapview" hidden></div>
+    <div class="banner" id="mapBanner" hidden></div>
+  </main>
+
+  <aside id="right"></aside>
+</div>
+
+<div id="dialogs"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script src="js/util.js"></script>
+<script src="js/numinput.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/images.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/store.js"></script>
+<script src="js/actions.js"></script>
+<script src="js/geometry.js"></script>
+<script src="js/symbols.js"></script>
+<script src="js/render.js"></script>
+<script src="js/fares.js"></script>
+<script src="js/route.js"></script>
+<script src="js/ui-dropdown.js"></script>
+<script src="js/topbar.js"></script>
+<script src="js/nav-canvas.js"></script>
+<script src="js/nav-mapview.js"></script>
+<script src="js/nav-ui.js"></script>
+</body>
+</html>

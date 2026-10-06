@@ -1,0 +1,160 @@
+{
+  "id": "PYL",
+  "code": "PYL",
+  "mode": "mrt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "Putrajaya Line",
+    "ms": "Laluan Putrajaya",
+    "zh-Hant": "布城線",
+    "ta": "புத்ராஜெயா பாதை"
+  },
+  "color": "#faca05",
+  "style": "octilinear",
+  "inOut": true,
+  "schedules": {
+    "tz": "Asia/Kuala_Lumpur",
+    "plans": [
+      {
+        "name": "Weekdays",
+        "dir": "fwd",
+        "days": [
+          "mon",
+          "tue",
+          "wed",
+          "thu",
+          "fri"
+        ],
+        "dates": [],
+        "except": [],
+        "first": "06:00",
+        "last": "23:36",
+        "starts": [],
+        "every": [
+          {
+            "from": "06:00",
+            "to": "07:00",
+            "min": 9
+          },
+          {
+            "from": "07:00",
+            "to": "09:30",
+            "min": 4
+          },
+          {
+            "from": "09:30",
+            "to": "17:00",
+            "min": 9
+          },
+          {
+            "from": "17:00",
+            "to": "19:30",
+            "min": 4
+          },
+          {
+            "from": "19:30",
+            "to": "23:36",
+            "min": 9
+          }
+        ]
+      },
+      {
+        "name": "",
+        "dir": "back",
+        "days": [
+          "mon",
+          "tue",
+          "wed",
+          "thu",
+          "fri"
+        ],
+        "dates": [],
+        "except": [],
+        "first": "06:00",
+        "last": "23:34",
+        "starts": [],
+        "every": [
+          {
+            "from": "06:00",
+            "to": "07:00",
+            "min": 9
+          },
+          {
+            "from": "07:00",
+            "to": "09:30",
+            "min": 4
+          },
+          {
+            "from": "09:30",
+            "to": "17:00",
+            "min": 9
+          },
+          {
+            "from": "17:00",
+            "to": "19:30",
+            "min": 4
+          },
+          {
+            "from": "19:30",
+            "to": "23:34",
+            "min": 9
+          }
+        ]
+      }
+    ]
+  },
+  "created": "2026-10-09",
+  "badges": {
+    "s": {
+      "dx": -41,
+      "dy": -53
+    }
+  },
+  "path": [
+    "PY01",
+    "PY02",
+    "PY03",
+    "PY04",
+    "PY05",
+    "PY06",
+    [13,14],
+    "PY07",
+    "PY08",
+    "PY09",
+    "PY10",
+    "PY11",
+    {"s":"PY12","label":{"pos":"w"}},
+    {"s":"PY13","label":{"pos":"w"}},
+    {"s":"PY14","label":{"pos":"w"}},
+    {"s":"PY15","label":{"pos":"w"},"time":2},
+    {"s":"PY16","time":2},
+    [23,20],
+    "PY17",
+    "PY18",
+    {"s":"PY19","label":{"pos":"n"}},
+    {"s":"PY20","label":{"pos":"w","dx":74,"dy":-33}},
+    [38,20],
+    "PY21",
+    "PY22",
+    "PY23",
+    {"s":"PY24","time":3,"timeBack":3},
+    {"s":"PY25","label":{"pos":"ne","dx":-34,"dy":93},"time":2,"timeBack":2},
+    {"s":"PY26","time":2,"timeBack":2},
+    {"s":"PY27","symAt":1790138933236,"symbol":"interchange"},
+    "PY28",
+    "PY29",
+    "PY30",
+    "PY31",
+    {"s":"PY32","label":{"pos":"w"}},
+    {"s":"PY33","label":{"pos":"w"}},
+    {"s":"PY34","label":{"pos":"w"},"seg":"solid"},
+    {"s":"PY35","label":{"pos":"w"},"seg":"solid"},
+    {"s":"PY36","label":{"pos":"w"}},
+    {"s":"PY37","label":{"pos":"w"}},
+    {"s":"PY38","label":{"pos":"w"}},
+    {"s":"PY39","label":{"pos":"w"}},
+    {"s":"PY40","label":{"pos":"w"}},
+    "PY41"
+  ]
+}
