@@ -1,0 +1,9 @@
+[
+{"id":"SB1","names":{"en":"Sunway-Setia Jaya","ms":"Sunway-Setia Jaya","zh-Hant":"","ta":""},"lat":3.082945,"lng":101.612259,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":"","node":[13,44],"connections":[{"to":"KD08","type":"link"}]},
+{"id":"SB2","names":{"en":"Mentari","ms":"Mentari","zh-Hant":"","ta":""},"lat":3.076171,"lng":101.610215,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":null,"node":[14,46]},
+{"id":"SB3","names":{"en":"Sunway Lagoon","ms":"Sunway Lagoon","zh-Hant":"","ta":""},"lat":3.070632,"lng":101.610738,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":null,"node":[16,46]},
+{"id":"SB4","names":{"en":"SunMed","ms":"SunMed","zh-Hant":"","ta":""},"lat":3.065488,"lng":101.608619,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":null,"node":[17,47]},
+{"id":"SB5","names":{"en":"SunU-Monash","ms":"SunU-Monash","zh-Hant":"","ta":""},"lat":3.065318,"lng":101.601549,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":null,"node":[16,48]},
+{"id":"SB6","names":{"en":"South Quay-USJ 1","ms":"South Quay-USJ 1","zh-Hant":"","ta":""},"lat":3.061638,"lng":101.596788,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":"","node":[14,48]},
+{"id":"SB7","names":{"en":"USJ 7","ms":"USJ 7","zh-Hant":"","ta":""},"lat":3.055331,"lng":101.592,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2015-06-02","closed":null,"node":[11,48],"connections":[{"to":"KJ31","type":"interchange"}]}
+]

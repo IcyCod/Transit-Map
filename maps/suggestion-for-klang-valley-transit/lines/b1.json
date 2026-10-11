@@ -1,0 +1,45 @@
+{
+  "id": "B1",
+  "code": "B1",
+  "mode": "brt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "BRT Sunway Line",
+    "ms": "Laluan BRT Sunway",
+    "zh-Hant": "雙威 BRT 線",
+    "ta": "சன்வே விரைவுப் பேருந்து வழித்தடம்"
+  },
+  "color": "#0f6b3a",
+  "style": "octilinear",
+  "inOut": true,
+  "created": "2026-10-09",
+  "badges": {
+    "s": {
+      "dx": -50,
+      "dy": 40
+    },
+    "e": {
+      "dx": 61,
+      "dy": -27
+    }
+  },
+  "schedules": {"tz": "Asia/Kuala_Lumpur", "plans": [
+    {"name":"Weekdays","dir":"fwd","days":["mon","tue","wed","thu","fri"],"dates":[],"except":[],"first":"06:00","last":"24:00","starts":[],"every":[{"from":"06:00","to":"07:00","min":8},{"from":"07:00","to":"09:30","min":6},{"from":"09:30","to":"17:00","min":8},{"from":"17:00","to":"19:30","min":6},{"from":"19:30","to":"24:00","min":8}]},
+    {"name":"Weekdays","dir":"back","days":["mon","tue","wed","thu","fri"],"dates":[],"except":[],"first":"06:00","last":"24:00","starts":[],"every":[{"from":"06:00","to":"07:00","min":8},{"from":"07:00","to":"09:30","min":6},{"from":"09:30","to":"17:00","min":8},{"from":"17:00","to":"19:30","min":6},{"from":"19:30","to":"24:00","min":8}]},
+    {"name":"Weekends & public holidays","dir":"fwd","days":["sat","sun","hol"],"dates":[],"except":[],"first":"06:00","last":"24:00","starts":[],"every":[{"from":"06:00","to":"24:00","min":10}]},
+    {"name":"Weekends & public holidays","dir":"back","days":["sat","sun","hol"],"dates":[],"except":[],"first":"06:00","last":"24:00","starts":[],"every":[{"from":"06:00","to":"24:00","min":10}]}
+  ]},
+  "path": [
+    {"s":"SB1","label":{"pos":"e","dx":15,"dy":2}},
+    [13,46],
+    "SB2",
+    "SB3",
+    [17,46],
+    "SB4",
+    [17,48],
+    "SB5",
+    "SB6",
+    "SB7"
+  ]
+}

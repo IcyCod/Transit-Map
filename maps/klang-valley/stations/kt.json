@@ -1,0 +1,8 @@
+[
+{"id":"KT1","names":{"en":"KL Sentral","ms":"KL Sentral","zh-Hant":"吉隆坡中環","ta":"கோலாலம்பூர் சென்ட்ரல்"},"lat":3.133952,"lng":101.686597,"status":"operational","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2002-06-20","closed":null,"node":[24,34]},
+{"id":"KT2","names":{"en":"Bandar Tasik Selatan","ms":"Bandar Tasik Selatan","zh-Hant":"","ta":""},"lat":3.076245,"lng":101.710476,"status":"operational","platform":[{"type":"side","count":2}],"structure":"at_grade","opened":"2002-06-20","closed":"","node":[36,38],"note":"Position estimated from the schematic map.","connections":[{"to":"KB04","type":"link"},{"to":"SP15","type":"link"}]},
+{"id":"KT3","names":{"en":"Putrajaya Sentral","ms":"Putrajaya Sentral","zh-Hant":"","ta":""},"lat":2.931474,"lng":101.670965,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2002-06-20","closed":null,"node":[36,52]},
+{"id":"KT4","names":{"en":"Salak Tinggi","ms":"Salak Tinggi","zh-Hant":"","ta":""},"lat":2.82572,"lng":101.713416,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2002-06-20","closed":null,"node":[36,54]},
+{"id":"KT5","names":{"en":"KLIA","ms":"KLIA","zh-Hant":"","ta":""},"lat":2.7456,"lng":101.7099,"status":"operational","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2002-06-20","closed":null,"node":[36,56]},
+{"id":"KT6","names":{"en":"KLIA2","ms":"KLIA2","zh-Hant":"","ta":""},"lat":2.744681,"lng":101.684668,"status":"operational","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2014-05-01","closed":null,"node":[32,57],"connections":[{"to":"KE3","type":"interchange"}]}
+]

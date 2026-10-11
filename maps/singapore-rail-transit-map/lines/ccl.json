@@ -1,0 +1,71 @@
+{
+  "id": "CCL",
+  "code": "CCL",
+  "mode": "mrt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "Circle Line",
+    "ms": "Laluan Bulatan",
+    "zh-Hant": "環線",
+    "ta": "வட்ட ரயில் பாதை",
+    "zh-Simp": ""
+  },
+  "color": "#fe8e10",
+  "style": "octilinear",
+  "loop": true,
+  "inOut": true,
+  "circle": {
+    "x": 640.42,
+    "y": 554.48,
+    "r": 10.09
+  },
+  "lookFor": "via",
+  "created": "2026-10-09",
+  "path": [
+    {"s":"CC4","symAt":1791630994346,"symbol":"pill"},
+    "CC5",
+    "CC6",
+    "CC7",
+    "CC8",
+    "CC9",
+    "CC10",
+    "CC11",
+    "CC12",
+    "CC13",
+    "CC14",
+    "CC15",
+    "CC16",
+    "CC17",
+    "CC18",
+    "CC19",
+    "CC20",
+    "CC21",
+    "CC22",
+    "CC23",
+    "CC24",
+    "CC25",
+    "CC26",
+    "CC27",
+    "CC28",
+    "CC29",
+    "CC30",
+    "CC31",
+    "CC32",
+    "CC33",
+    {"s":"CC34","symAt":1791633104366,"symbol":"pill"}
+  ],
+  "branches": [
+    {"id":"b1", "path": [
+      {"s":"CC4","arc":{"b":0.1008,"g":"4oels"}},
+      [649,559],
+      [647,559],
+      "CC3",
+      "CC2",
+      [643,557],
+      {"s":"CC1","symbol":"pill","symAt":1791638777353},
+      [643,557],
+      [643,557]
+    ]}
+  ]
+}

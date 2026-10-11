@@ -1,0 +1,5 @@
+[
+{"id":"KE1","names":{"en":"KL Sentral","ms":"KL Sentral","zh-Hant":"吉隆坡中環","ta":"கோலாலம்பூர் சென்ட்ரல்"},"lat":3.133952,"lng":101.686597,"status":"operational","platform":[{"type":"side","count":2}],"structure":"elevated","opened":"2002-04-14","closed":"","node":[24,34],"connections":[{"to":"KT1","type":"platform"}]},
+{"id":"KE2","names":{"en":"KLIA","ms":"KLIA","zh-Hant":"","ta":""},"lat":2.754699,"lng":101.704511,"status":"operational","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2002-04-14","closed":null,"node":[36,56],"connections":[{"to":"KT5","type":"platform"}]},
+{"id":"KE3","names":{"en":"KLIA2","ms":"KLIA2","zh-Hant":"","ta":""},"lat":2.744696,"lng":101.684668,"status":"operational","platform":[{"type":"island","count":1}],"structure":"elevated","opened":"2014-05-01","closed":null,"node":[32,57]}
+]

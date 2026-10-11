@@ -1,0 +1,54 @@
+{
+  "id": "SAL",
+  "code": "SAL",
+  "mode": "lrt",
+  "status": "operational",
+  "author": "Project",
+  "names": {
+    "en": "Shah Alam Line",
+    "ms": "Laluan Shah Alam",
+    "zh-Hant": "莎亞南線",
+    "ta": "சா ஆலாம் வழித்தடம்"
+  },
+  "color": "#59b8e6",
+  "style": "octilinear",
+  "inOut": true,
+  "created": "2026-10-09",
+  "badges": {
+    "s": {
+      "dx": -40,
+      "dy": -34
+    }
+  },
+  "path": [
+    {"s":"SA01","label":{"pos":"e","dx":20,"dy":0}},
+    {"x":9,"y":29,"seg":"solid"},
+    {"s":"SA02","seg":"solid"},
+    {"s":"SA03","label":{"pos":"e"}},
+    "SA04",
+    "SA05",
+    "SA06",
+    "SA07",
+    "SA08",
+    "SA09",
+    "SA10",
+    "SA11",
+    "SA12",
+    "SA13",
+    {"s":"SA14","label":{"pos":"w"}},
+    {"s":"SA15","label":{"pos":"w"}},
+    "SA16",
+    {"s":"SA17","label":{"pos":"w"}},
+    [5,50],
+    {"s":"SA18","label":{"pos":"w"}},
+    "SA19",
+    "SA20",
+    [10,50],
+    "SA21",
+    "SA22",
+    "SA23",
+    "SA24",
+    "SA25",
+    "SA26"
+  ]
+}

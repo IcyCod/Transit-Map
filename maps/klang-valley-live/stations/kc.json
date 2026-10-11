@@ -1,0 +1,7 @@
+[
+{"id":"KC05","names":{"en":"Batu Caves","ms":"Batu Caves","zh-Hant":"峇都喼","ta":"பத்து மலை"},"lat":3.237708,"lng":101.681181,"status":"operational","platform":[{"type":"side","count":1},{"type":"island","count":1}],"structure":"at_grade","opened":"2010-07-29","closed":"","node":[24,12]},
+{"id":"KC04","names":{"en":"Taman Wahyu","ms":"Taman Wahyu","zh-Hant":"","ta":""},"lat":3.214507,"lng":101.67218,"status":"operational","platform":[{"type":"side","count":2}],"structure":"at_grade","opened":"2010-07-29","closed":"","node":[24,15]},
+{"id":"KC03","names":{"en":"Kampung Batu","ms":"Kampung Batu","zh-Hant":"","ta":""},"lat":3.204796,"lng":101.675648,"status":"operational","platform":[{"type":"side","count":2}],"structure":"at_grade","opened":"2010-07-29","closed":null,"node":[24,16]},
+{"id":"KC02","names":{"en":"Batu Kentonmen","ms":"Batu Kentonmen","zh-Hant":"","ta":""},"lat":3.198216,"lng":101.681267,"status":"operational","platform":[{"type":"side","count":2}],"structure":"at_grade","opened":"2010-07-29","closed":null,"node":[24,17]},
+{"id":"KC01","names":{"en":"Sentul","ms":"Sentul","zh-Hant":"冼都","ta":"செந்தூல்"},"lat":3.181955,"lng":101.688648,"status":"operational","platform":[{"type":"side","count":1},{"type":"island","count":1}],"structure":"at_grade","opened":"1995-08-14","closed":null,"node":[24,19]}
+]

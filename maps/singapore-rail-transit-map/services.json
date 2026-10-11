@@ -1,0 +1,5 @@
+{
+  "services": [
+    {"id":"anticlockwise-clockwise-service","name":"Anticlockwise / Clockwise Service","via":["CC1","CC5","CC32"],"hideName":true}
+  ]
+}
